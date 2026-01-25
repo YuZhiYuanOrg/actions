@@ -16,8 +16,10 @@ jobs:
       - name: Checkout GitHub Repository
         uses: actions/checkout@v6
         with:
-          repository: LittleFishYu2008/rustdesk
+          repository: rustdesk/rustdesk
+          ref: master
           fetch-depth: 0
+          fetch-tags: true
 
       - name: Add Gitee and GitCode to SSH known_hosts
         run: |
